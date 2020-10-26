@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Tips/Attractions</title>
+<link rel="stylesheet" href="assets/css/home_page.css">
+</head>
+
+<div class="logo"> <img src="assets/images/logo.png" alt="Logo"> </div>
+
+<div id="navcontainer">
+	<div class="flex">
+		<a href="index.html">
+		<div class="button">
+				<p>Welcome</p>
+	    	</div>
+	    </a>
+	    <a href="dorms.html">
+	    <div class="button">
+	    	<p>Dorms</p>
+	    </div>
+	    </a>
+	    <a href="dining.html">
+	    <div class="button">
+	    	<p>Dining</p>
+	    </div>
+	    </a>
+	    <a href="clubs.html">
+	    <div class="button">
+	    	<p>Clubs</p>
+	    </div>
+	    </a>
+	    <a href="sports.html">
+	    <div class="button">
+	    	<p>Sports</p>
+	    </div>
+	    </a>
+	    <a href="tips.html">
+	    <div class="active">
+	    	<p>Tips & Attractions</p>
+	    </div>
+	    </a>
+	    <a href="resources.html">
+	    <div class="button">
+	    	<p>Resources</p>
+	    </div>
+	    </a>
+	</div>
+</div>
+
+<div class="content">
+<p>Here are some tips provided by fellow college students. If you take the advice, you will find college less stressful than it already is.
+
+</p>  
+<h1>Tips*</h1>
+<ul>
+<li>
+Always go to class. This is <strong>SO</strong> important because you will fall behind.
+</li>
+<li>
+Get involved. All the knowledge in the world won’t help you if you come out of college with no experience or 
+professional relationships.
+</li>
+<li>
+ALWAYS back up your files. 
+</li>
+<li>
+Never leave your clothes in a washer after the cycle is over. Not doing this is rude, and people WILL pull your clothes out and set them somewhere.
+</li>
+<li>
+Get to know your professors. College is just as much about networking as it is about sitting in class.
+</li>
+<li>
+Try out as many clubs as you can. Feel no obligation to them if you don’t like them. College is about finding out what you love to do.
+</li>
+<li>
+Make sure you are organized. Get a calendar and write down due dates and reminders.
+</li>
+<li>
+If you have a question, don't be afraid to go to your professor or TA's office hours or send them an email.
+</li>
+<li>
+Make sure you sign up for next semester classes early. You don't want to be stuck on a waitlist.
+</li>
+<li>
+Take advantage of many of the services and activities offered - like tutoring, the fitness center, health services, and clubs or sports.
+</li>
+
+</ul>
+<p>*Adapted from CollegeInfoGeek</p>
+<h1>Attractions</h1>
+<p>Rochester has so many things to do year-round. Are you an outdoors person and looking for an adventure? Do you want to 
+explore musuems and coffeeshops? Do you want to experience some great nightlife? Do you want to go shopping? There is something for everyone!</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="assets/images/strong.jpg" alt="Strong" style="width:100%">
+    <div class="text">Strong National Musuem of Play</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets/images/rmsc.jpg" alt="RMSC" style="width:100%">
+    <div class="text">Rochester Musuem and Science Center</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="assets/images/erie.jpg" alt="Erie Canal" style="width:100%">
+    <div class="text">Erie Canal</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="assets/images/javas.jpg" alt="Java's Cafe'" style="width:100%">
+    <div class="text">Java's Cafe</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="assets/images/lux.jpg" alt="Lux" style="width:100%">
+    <div class="text">Lux Lounge</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="assets/images/marketplace.jpg" alt="Marketplace" style="width:100%">
+    <div class="text">Marketplace Mall</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<div class="attractions">
+
+<div class="attraction1">
+<p>The Strong National Museum of Play</p>
+<p>1 Manhattan Square Dr, Rochester, NY 14607</p>
+<p>One of the largest museums in the United States, The Strong is an interactive, collections-based museum devoted to the history and exploration 
+of play.</p>
+</div>
+
+<div class="attraction2">
+<p>Rochester Science Museum and Planetarium</p>
+<p>657 East Ave, Rochester, NY 14607</p>
+<p>Follow your curiosity from the depths of the oceans to the edge of the universe.
+Push the limits of your imagination to create never-before-seen inventions.
+</p>
+</div>
+
+<div class="attraction3">
+<p>Erie Canal Trail</p>
+<p>The Erie Canal Trail is great for joggers or cyclists. It is one of the world's most famous man-made waterways and spans between Albany and Buffalo.
+</p>
+</div>
+
+<div class="attraction4">
+<p>Java's Cafe</p>
+<p>16 Gibbs St, Rochester, NY 14604</p>
+<p>Java's Cafe is a study spot with a hip vibe and a menu of pastries and coffee.</p>
+</div>
+
+<div class="attraction5">
+<p>Lux Lounge</p>
+<p>666 South Ave, Rochester, NY 14620</p>
+<p>A bar that has a backyard and firepit, a pool table, jukebox and many drinks.</p>
+</div>
+
+<div class="attraction6">
+<p>The Marketplace Mall</p>
+<p>1 Miracle Mile Dr, Rochester, NY 14623</p>
+<p>A shopping center that has more than 110 stores and a food court. You can get all your shopping done here.</p>
+</div>
+</div>
+
+<footer><p class="copyright">&copy; Copyright 2018 Alex Ketavongsa</p></footer>
